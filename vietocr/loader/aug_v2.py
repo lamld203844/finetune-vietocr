@@ -41,7 +41,7 @@ class AlbumentationsTransform:
                                         p=0.5)),
 
             sometimes(A.OneOf([
-                        A.Dropout(p=0.1, always_apply=False),
+                        # A.Dropout(p=0.1, always_apply=False),
                         A.CoarseDropout(max_holes=8, max_height=16, max_width=16, min_holes=None, min_height=None, min_width=None, fill_value=0, mask_fill_value=None, always_apply=False, p=0.1),
                     ], p=0.5)),
         ], p=0.5)
